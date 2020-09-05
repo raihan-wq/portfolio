@@ -1,0 +1,250 @@
+*{
+box-sizing:border-box;
+font-family: 'Fira Sans', sans-serif;
+}
+body{
+margin:0px;
+}
+/* navbar start from here*/
+h1{
+font-size:2.5rem;
+text-align:center;
+}
+.logo img{color:#0c6168;}
+a{
+color:white;
+font-size:1.2rem
+text-decoration:none;
+
+}
+p{
+font-size:1.2rem;
+text-align:justify;
+
+
+}
+h2{
+font-size:1.5rem;
+text-align:center;
+}
+.dotted-hr{
+border:dotted 7px white;
+border-bottom:none;
+margin:20x auto;
+width:100px;
+}
+[class*="col-"]{
+float:left;
+padding:10px;
+}
+/* mobile*/
+[class*="col-"]{
+width:100%;
+}
+.nav-bar{
+background:#40868b;
+padding:1%  7%;
+text-align:center;
+}
+.nav-bar h1{
+color:white;
+margin:0px;
+padding-top:10px;}
+.nav-bar .nav-bar-menue{
+display:flex;
+flex-direction:column;
+text-transform:uppercase;
+
+}
+.nav-bar .nav-bar-menue a{
+text-decoration:none;
+background: #0c6168;
+border-radius:10px;
+margin:7px 0px;
+padding:10px;
+}
+.nav-bar .nav-bar-menue a:hover{background:gray;}
+.nav-bar::after{
+content:"";
+display:table;
+clear:both;
+
+}
+/* navbar ends here*/
+/* profile  start from here*/
+.profile{
+padding:130px 10px;
+position:relative;
+text-align:center;
+}
+.profile .top-weather-icon{position:absolute;right:60px; top:20px; transition:2s;}
+.profile .top-weather-icon:hover{transform:rotate(360deg)}
+.profile-description h1{font-family: 'Satisfy', cursive; font-size:3rem;}
+.profile-description p{color:gray; text-align:center; width:90%;
+margin:0px auto 20px auto;
+}
+.profile .bottom-weather-icon{position:absolute;transition:2s; bottom:10px ; left:60px; }
+.profile .bottom-weather-icon:hover{transform:rotate(360deg)}
+.profile::after{
+content:"";
+clear:both;
+display:table;}
+/* profile ends here ends here*/
+/* about me start here*/
+.about-me{
+background:#39a4ac;
+padding:1% 7%;
+color:white;
+text-align:center;
+font-family: 'Montserrat', sans-serif;
+}
+
+.aboutme-img img{
+border:5px solid white;
+border-radius:50%;
+height:200px;
+width:200px;
+} 
+.aboutme-desc p{
+text-align:center;
+}
+.about-me a{
+font-size:1.2rem;
+}
+.about-me .cv-button{
+background:#052d2f;
+color:white;
+border:none;
+border-radius:12px;
+padding:15px;
+font-size:15px;
+cursor:pointer;
+text-align:center;
+margin:10px;
+
+}
+.about-me::after{
+content:"";
+display:table;
+clear:both;
+}
+/* about me ends here*/
+/* professional Expariance start from here */
+.professional-expreience{
+padding:1% 0%;
+}
+.professional-expreience .card{
+background:#a39e9e;
+border-radius:5px;
+padding:15px;
+transition:0.4s;
+height:700px;
+}
+.professional-expreience .card:hover{
+ box-shadow: 0  4px 8px 5px black;
+}
+.card-icon{text-align:center; }
+.card-icon i{ margin-top:20px ; font-size:80px; border-radius:50%; border:5px solid white; padding:15px; }
+.card-title h2{background:#616161; color:white;padding:10px; text-align:center;}
+.skills-container{
+padding-right:45px ;
+
+}
+.skills-container li{
+
+list-style:none;
+font-weight:bold;
+margin:30px 10px;
+position:relative;
+text-transform:uppercase;
+}
+.skills-container li::before{
+content:"";
+position:absolute;
+top:calc(100% + 5px);
+left:0;
+width:100%;
+height:10px;
+background:rgb(86,86,153,.5);
+border-radius:1000px;
+}
+.skills-container li::after{
+content:"";
+position:absolute;
+top:calc(100% + 5px);
+left:0;
+width:0;
+height:10px;
+background:rgb(86,86,153,1);
+border-radius:1000px;
+animation-duration:3s;
+animation-delay:2s;
+animation-timing-function:linear;
+animation-fill-mode:forwards;
+animation-iteration-count:infinite;
+}
+.skills-container li.html::after{animation-name:html}
+@keyframes html{to{width:95%;}}
+.skills-container li.css::after{animation-name:css}
+@keyframes css{to{width:90%;}}
+.skills-container li.bootstrap::after{animation-name:bootstrap}
+@keyframes bootstrap{to{width:85%;}}
+
+.skills-container li.html::after{animation-name:html}
+@keyframes html{to{width:95%;}}
+
+.skills-container li.js::after{animation-name:js}
+@keyframes js{to{width:50%;}}
+.skills-container li.jquery::after{animation-name:jquery}
+@keyframes jquery{to{width:80%;}}
+.skills-container li.react::after{animation-name:react}
+@keyframes react{to{width:70%;}}
+.skills-container li.node::after{animation-name:node}
+@keyframes node{to{width:70%;}}
+
+
+
+
+
+
+.professional-expreience::after{
+content:"";
+display:table;
+clear:both;
+}
+/* professional Expariance End here */
+/*contract from start from here*/
+.contact-full{
+background:#39A4AC;
+margin-top:10px;
+}
+.contact-full h2{color:white;}
+.contract-des li{color:white; padding:15px 15px; text-align:justify; }
+.contract-form form{padding:15px 15px; display:flex; flex-direction:column;}
+.contract-form form > *{border:none; padding:15px; margin-bottom:10px; text-align:center; border-radius:10px;}
+.contract-form form .contract-btn button{ padding:10px 20px; border:none; border-radius:6px; background:rgba(0,0,0,.6);color:white; cursor:pointer;}
+.contract-more .contract-more-parent{text-align:center; padding-top:70px;}
+
+.contract-more-one,.contract-more-two,.contract-more-three > *{ padding:0px 30px 50px 50px; font-size:40px; color:white; cursor:pointer;  }
+.contract-more-one i:hover{color:black;}
+.contract-more-two i:hover{color:black;}
+.contract-more-three i:hover{color:black;}
+.contact-full::after{
+content:"";
+display:table;
+clear:both;
+}
+/*contract from end here*/
+
+/*footer section start from here*/
+.footer-section{background:black; color:white; padding:10px 0px; display:flex; flex-direction:column; align-items:center;}
+.footer-one{display:flex; flex-direction:column; text-align:center; }
+.footer-one a{text-decoration:none ; padding:10px 0px;}
+.footer-two p{font-size:1rem; text-align:center;}
+.footer-section::after{
+  content:"";
+  display:table;
+  clear:both;
+
+}
+/*footer section end here*/
